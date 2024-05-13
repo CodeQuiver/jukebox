@@ -1,10 +1,12 @@
 # jukebox
 Simple Python script for playing sound files. By default plays a random selection from a pre-set directory.
+
 @author: codequiver (github.com/codequiver)
-GitHib Source: [https://github.com/CodeQuiver/jukebox](https://github.com/CodeQuiver/jukebox)
+
+GitHub Source: [https://github.com/CodeQuiver/jukebox](https://github.com/CodeQuiver/jukebox)
 
 This script will play a random mp3 or wav sound file from a set folder when activated. 
-By default, the directory/folder is `./jukebox_sound`.
+By default, the directory/folder is "./jukebox_sound".
 
 Alternatively, a specific sound file name or a specific folder can be passed as argument(s).
 
@@ -18,12 +20,12 @@ Args:
 --get-default-sound-folder     Print the current default sound folder stored in `default_sound_folder.config`, then exit script.
 
 Sample Usage:
-    python jukebox.py                                                           --> randomly play an mp3 or wav file from the default folder
-    python jukebox.py --sound "metal_dragon_battle.mp3"
-    python jukebox.py --folder "./bard_songs"
-    python jukebox.py --sound "metal_dragon_battle.mp3" --folder "./bard_songs"
+    python jukebox.py                                                           --> randomly plays an mp3 or wav file from the default folder
+    python jukebox.py --sound "metal_dragon_battle.mp3"                         --> plays "metal_dragon_battle.mp3"
+    python jukebox.py --folder "./bard_songs"                                   --> randomly plays an mp3 or wav file from "./bard_songs"
+    python jukebox.py --sound "metal_dragon_battle.mp3" --folder "./bard_songs" --> plays "metal_dragon_battle.mp3" if found in "./bard_songs"
     python jukebox.py --set-default-sound-folder "C://Music/Game_Tracks/Custom" --> returns success message or fail message
-    python jukebox.py --get-default-sound-folder                                --> returns "C://Music/Game_Tracks/Custom"
+    python jukebox.py --get-default-sound-folder                                --> returns "C://Music/Game_Tracks/Custom" (if run after above example)
 
 Citations:
 
